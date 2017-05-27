@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+<div id="game">
+    <button id="but">Start game</button>
+    <div class="hand_box_V">
+        <h3>Вася</h3>
+        <img id="backC1" src="img_cards/back_card.png">
+        <ul id="gameHandVasja"></ul>
+    </div>
+    <div class="hand_box_P">
+        <h3>Петя</h3>
+        <img id="backC2" src="img_cards/back_card.png">
+        <ul id="gameHandPetja"></ul>
+    </div>
+    <div id="loader">
+        <ul id="gamePointsVasja"></ul>
+        <span>:</span>
+        <ul id="gamePointsPetja"></ul>
+        <div id="suitCard"></div>
+        <div id="wrapCard"></div>
+    </div>
+</div>
+
+
+
+<script src="Card.js"></script>
+<script src="Deck.js"></script>
+<script src="Player.js"></script>
+<script src="Game.js"></script>
+<script src="GameAnimation.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
