@@ -103,13 +103,13 @@ h3{
 #loader  #suitCard{
     position: absolute;
     z-index: 300;
-    font-size: 3em;
-    left: 48.8%;
-    top: 84px;
+    font-size: 7em;
+    left: 46.8%;
+    top: 10px;
 }
 @media screen and (max-width: 1300px) {
     #loader  #suitCard{
-        left: 47.9%;
+        left: 45%;
     }
 }
 .animate_suit{
