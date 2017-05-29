@@ -10,13 +10,19 @@ game.onclick = function () {
         document.getElementById('suitCard').innerHTML = arrSuit[randNum];
 
         var gameP = document.getElementById('gameHandPetja');
-        gameHandPetja.classList.add('animate_gameHandP');
         gameP.innerHTML = cardPetja[k++] + gameP.innerHTML;
 
-        var gameV = document.getElementById('gameHandVasja');
-        gameHandVasja.classList.add('animate_gameHandV');
+        var gameV = document.getElementById('gameHandVasja');     
         gameV.innerHTML = cardVasja[s++] + gameV.innerHTML;
+        
 
+        var elmV = gameV.querySelector("li");
+        elmV.className = "animate_gameHandV";
+
+        var elmP = gameP.querySelector("li");
+        elmP.className = "animate_gameHandP";
+        
+        
         var pointP = document.getElementById('gamePointsPetja');
         pointP.innerHTML = numPetja[l++];
 
