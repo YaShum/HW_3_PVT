@@ -98,13 +98,9 @@ h3{
     position: absolute;
     z-index: 300;
     font-size: 7em;
-    left: 46.8%;
+    width: 100%;
+    text-align: center;
     top: 10px;
-}
-@media screen and (max-width: 1300px) {
-    #loader  #suitCard{
-        left: 45%;
-    }
 }
 .animate_suit{
     -webkit-animation: suit 3s ease;
