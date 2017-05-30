@@ -1,3 +1,12 @@
+var gameP = document.getElementById('gameHandPetja');
+for (var k = 0; k < 18;) {
+    gameP.innerHTML = cardPetja[k++] + gameP.innerHTML;
+}
+var gameV = document.getElementById('gameHandVasja');
+for (var s = 0; s < 18;) {
+    gameV.innerHTML = cardVasja[s++] + gameV.innerHTML;
+}
+
 game.onclick = function () {
     document.getElementById('but').style.display = "none";
     var s = 0,
@@ -8,19 +17,24 @@ game.onclick = function () {
         wrapCard.classList.add('animate');
         suitCard.classList.add('animate_suit');
         document.getElementById('suitCard').innerHTML = arrSuit[randNum];
+        
+        var elmP = gameP.childNodes[t++];
+        elmP.className = "animate_gameHandP";
+        
+        var elmV = gameV.childNodes[r++];
+        elmV.className = "animate_gameHandV";
 
-        var gameP = document.getElementById('gameHandPetja');
+        /*var gameP = document.getElementById('gameHandPetja');
         gameP.innerHTML = cardPetja[k++] + gameP.innerHTML;
 
         var gameV = document.getElementById('gameHandVasja');     
         gameV.innerHTML = cardVasja[s++] + gameV.innerHTML;
         
-
         var elmV = gameV.querySelector("li");
         elmV.className = "animate_gameHandV";
 
         var elmP = gameP.querySelector("li");
-        elmP.className = "animate_gameHandP";
+        elmP.className = "animate_gameHandP";*/
         
         
         var pointP = document.getElementById('gamePointsPetja');
