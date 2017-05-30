@@ -47,25 +47,19 @@ h3{
 }
 #game>div>ul{
     position: absolute;
-    top: 20%;
-    -webkit-transition-duration: 10s;
-    -o-transition-duration: 10s;
-    -moz-transition-duration: 10s;
-    transition-duration: 10s;
+    top: 20%;   
 }
-
+#game>div>ul li{
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+}
 .animate_gameHandV {
     transform: translate(260px,260px);
     -webkit-transform: translate(260px,260px);
-    -o-transform: translate(260px,260px);
-    -moz-transform: translate(260px,260px);
-
 }
 .animate_gameHandP{
-    transform: translate(-260px,260px);
+     transform: translate(-260px,260px);
     -webkit-transform: translate(-260px,260px);
-    -o-transform: translate(-260px,260px);
-    -moz-transform: translate(-260px,260px);
 }
 
 #loader{
