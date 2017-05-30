@@ -9,10 +9,10 @@ for (var s = 0; s < 18;) {
 
 game.onclick = function () {
     document.getElementById('but').style.display = "none";
-    var s = 0,
-        k = 0,
-        l = 0,
-        m = 0;
+    var l = 0,
+        m = 0,
+        r = 0,
+        t = 0;
     var timers = setTimeout(function func() {
         wrapCard.classList.add('animate');
         suitCard.classList.add('animate_suit');
