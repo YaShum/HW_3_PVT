@@ -48,7 +48,7 @@ h3{
 }
 #game>div>ul{
     position: absolute;
-    top: 20%;   
+    top: 30%;
 }
 #game>div>ul li{
     -webkit-transition-duration: 2s;
