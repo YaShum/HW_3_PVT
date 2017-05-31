@@ -32,7 +32,7 @@ game.onclick = function () {
         var pointV = document.getElementById('gamePointsVasja');
         pointV.innerHTML = numVasja[m++];
 
-        timers = setTimeout(func, 6000);
+        timers = setTimeout(func, 3000);
         if (k > 17 && l > 17) {
             clearTimeout(timers);
             document.getElementById('backC1').style.display = "none";
