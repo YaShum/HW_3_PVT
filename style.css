@@ -13,9 +13,10 @@ h3{
     margin: 0 auto;
     display: block;
     border: none;
-    background-color: #4695b9;
+    background-color: #5ba4c5;
     color: #fff;
-    padding: 8px 14px;
+    padding: .5em 1.5em;
+    font-size: 12pt;
 }
 #game button:hover{
     background-color: #6ba5b9;
