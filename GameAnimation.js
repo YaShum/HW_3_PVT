@@ -24,31 +24,38 @@ game.onclick = function () {
         var elmP = gameP.childNodes[t++];
         var elmV = gameV.childNodes[r++];
 
-        function pointWinner() {
-            PetjaPoint++;
-            VasjaPoint++;
-            if(PetjaPoint > VasjaPoint){
-                elmP.className += "winnerAnim";
-            }
-            else if(VasjaPoint > PetjaPoint){        
-                elmV.className += "winnerAnim";
-            }
-            else{
-
-            }
-        }
-        pointWinner();
         
-         var timersFr = setTimeout(function func1(){                     
+        
+       var timersFr = setTimeout(function func1(){                     
                 elmP.className = "animate_gameHandP";
                 elmV.className = "animate_gameHandV";           
-            }, 1500);
+          }, 1500);
         
         var pointP = document.getElementById('gamePointsPetja');
         pointP.innerHTML = numPetja[l++];
 
         var pointV = document.getElementById('gamePointsVasja');
         pointV.innerHTML = numVasja[m++];
+        
+        var numPointP = numPetja[l].replace(/[^0-9]/gim,'');
+        var numPointV = numVasja[m].replace(/[^0-9]/gim,'');
+
+        function pointWinner() {
+            if (numPointV > numPointP) {
+                elmV.className += "winnerAnim";
+                console.log(numPointV);
+                console.log(numPointP);
+            }
+            else if (numPointV < numPointP) {
+                elmP.className += "winnerAnim";
+                console.log(numPointP);
+                console.log(numPointV);
+            }
+            else if (numPointP == numPointV) {
+
+            }
+        }
+        pointWinner();
 
         timers = setTimeout(func, 5000);
         if (k > 17 && l > 17) {
