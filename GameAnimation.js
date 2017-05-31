@@ -15,16 +15,30 @@ game.onclick = function () {
         gameP.innerHTML = cardPetja[k++] + gameP.innerHTML;
         gameV.innerHTML = cardVasja[s++] + gameV.innerHTML;
         
-         var timersFr = setTimeout(function func1(){      
-             var r = 0,
-                 t = 0;
-                var elmP = gameP.childNodes[t++];              
-                elmP.className = "animate_gameHandP";
+    var r = 0,
+        t = 0;
+        var elmP = gameP.childNodes[t++];
+        var elmV = gameV.childNodes[r++];
 
-                var elmV = gameV.childNodes[r++];
-                elmV.className = "animate_gameHandV";
-              
-            }, 1000);
+        function pointWinner() {
+            PetjaPoint++;
+            VasjaPoint++;
+            if(PetjaPoint > VasjaPoint){
+                elmP.className += "winnerAnim";
+            }
+            else if(VasjaPoint > PetjaPoint){        
+                elmV.className += "winnerAnim";
+            }
+            else{
+
+            }
+        }
+        pointWinner();
+        
+         var timersFr = setTimeout(function func1(){                     
+                elmP.className = "animate_gameHandP";
+                elmV.className = "animate_gameHandV";           
+            }, 1500);
         
         var pointP = document.getElementById('gamePointsPetja');
         pointP.innerHTML = numPetja[l++];
