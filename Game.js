@@ -45,10 +45,7 @@ arrSuit.forEach(function (item) {
     var d = 0;
     kolSuit[d] = ('<span>' + item + '</span>');
     var screenCircke = document.getElementById('wrapCard');
-    screenCircke.innerHTML = kolSuit[d++] + screenCircke.innerHTML;
-    var set = setTimeout(function() {
-        screenCircke.style.display = "none";
-    }, 5000);
+    screenCircke.innerHTML = kolSuit[d++] + screenCircke.innerHTML;    
 });
 
 
