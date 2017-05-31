@@ -26,12 +26,6 @@ game.onclick = function () {
               
             }, 1000);
         
-        var elmP = gameP.childNodes[t++];
-        elmP.className = "animate_gameHandP";
-        
-        var elmV = gameV.childNodes[r++];
-        elmV.className = "animate_gameHandV";
-
         var pointP = document.getElementById('gamePointsPetja');
         pointP.innerHTML = numPetja[l++];
 
