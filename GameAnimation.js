@@ -5,10 +5,8 @@ game.onclick = function () {
     document.getElementById('but').style.display = "none";
     var l = 0,
         m = 0,
-        r = 0,
         k = 0,
-        s = 0,
-        t = 0;
+        s = 0;
     var timers = setTimeout(function func() {
         wrapCard.classList.add('animate');
         suitCard.classList.add('animate_suit');
@@ -17,7 +15,9 @@ game.onclick = function () {
         gameP.innerHTML = cardPetja[k++] + gameP.innerHTML;
         gameV.innerHTML = cardVasja[s++] + gameV.innerHTML;
         
-         var timersFr = setTimeout(function func1(){              
+         var timersFr = setTimeout(function func1(){      
+             var r = 0,
+                 t = 0;
                 var elmP = gameP.childNodes[t++];              
                 elmP.className = "animate_gameHandP";
 
@@ -32,13 +32,13 @@ game.onclick = function () {
         var pointV = document.getElementById('gamePointsVasja');
         pointV.innerHTML = numVasja[m++];
 
-        timers = setTimeout(func, 3000);
+        timers = setTimeout(func, 6000);
         if (k > 17 && l > 17) {
             clearTimeout(timers);
             document.getElementById('backC1').style.display = "none";
             document.getElementById('backC2').style.display = "none";
         }
-    }, 500);
+    }, 1000);
 };
 
 function GameAnimation(timers, gameP, gameV, pointP, pointV) {
