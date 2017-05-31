@@ -1,7 +1,8 @@
 var gameP = document.getElementById('gameHandPetja');
 var gameV = document.getElementById('gameHandVasja');
 
-game.onclick = function () {   
+game.onclick = function () {
+    document.getElementById('but').style.display = "none";
     var l = 0,
         m = 0,
         k = 0,
@@ -12,7 +13,7 @@ game.onclick = function () {
         document.getElementById('suitCard').innerHTML = arrSuit[randNum];
         
         if(document.getElementById('suitCard').classList.contains('animate_suit')){
-            setTimeout(function(){ document.getElementById('but').style.display = "none";},250);
+            setTimeout(function(){ document.getElementById('wrapCard').style.display = "none";},1000);
         }
         
         gameP.innerHTML = cardPetja[k++] + gameP.innerHTML;
