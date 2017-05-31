@@ -53,8 +53,10 @@ game.onclick = function () {
         timers = setTimeout(func, 5000);
         if (k > 17 && l > 17) {
             clearTimeout(timers);
-            document.getElementById('backC1').style.display = "none";
-            document.getElementById('backC2').style.display = "none";
+            setTimeout(function(){
+                    document.getElementById('backC1').style.display = "none";
+                    document.getElementById('backC2').style.display = "none";
+            },1000);
         }
     }, 1000);
 };
